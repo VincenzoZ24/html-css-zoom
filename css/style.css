@@ -34,7 +34,7 @@ body{
     border: none;
 }
 main{
-    height: calc( 100vh - 80px - 80px)
+    height: 100vh;
     overflow: scroll;
     
 }
@@ -45,7 +45,8 @@ main{
     flex-wrap: wrap;
     row-gap: 1rem;
     column-gap: 0.5rem; 
-    margin-bottom: 90px;  
+    margin-bottom: 85px
+      
 }
 .window{
     width: calc( (1200px - 3rem) / 7  );
@@ -75,4 +76,42 @@ footer{
     right: 0;
     z-index: 99;
     background-color: rgb(65, 62, 62);
+}
+.container-footer{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.info-footer{
+    display: flex;
+
+}
+.button-footer{
+    border: none;
+    font-size: 1.5rem;
+    background-color: rgb(65, 62, 62);
+    color: white;
+    margin-right: 2rem;
+}
+    
+/* .mute{
+    font-size: 0.8rem;
+    color: white;
+}
+.stop-video{
+    font-size: 0.8rem;
+} */
+.name-icone{
+    font-size: 0.8rem;
+    color: white;
+}
+.end-meeting p{
+    color: red;
+}
+.end-meeting{
+    height: 100%;
+    background-color: grey;
+    display: flex;
+    align-items: center;
 }
