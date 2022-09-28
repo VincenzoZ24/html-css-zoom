@@ -3,9 +3,17 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: black;
+}
 .container-nav{
     height: 80px;
     background-color: black;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -21,4 +29,38 @@
     background-color: gray;
     color: white;
     border: none;
+}
+main{
+    
+}
+.container-windows{
+    margin: 80px auto;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+    column-gap: 0.5rem;
+    
+    
+}
+.window{
+    width: calc( (1200px - 3rem) / 7  );
+    position: relative;
+    
+    
+  
+}
+.window img{
+   display: block;
+   width: 100%;
+   
+}
+.utente{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    background: grey;
+    padding: 0.3rem;
+    
 }
