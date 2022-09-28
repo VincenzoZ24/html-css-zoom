@@ -34,7 +34,7 @@ body{
     border: none;
 }
 main{
-    height: 100vh;
+    height: calc( 100vh - 80px - 80px)
     overflow: scroll;
     
 }
@@ -44,9 +44,8 @@ main{
     display: flex;
     flex-wrap: wrap;
     row-gap: 1rem;
-    column-gap: 0.5rem;
-    
-    
+    column-gap: 0.5rem; 
+    margin-bottom: 90px;  
 }
 .window{
     width: calc( (1200px - 3rem) / 7  );
@@ -67,4 +66,13 @@ main{
     padding: 0.3rem;
     font-size: 12px;
     
+}
+footer{
+    height: 80px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    background-color: rgb(65, 62, 62);
 }
